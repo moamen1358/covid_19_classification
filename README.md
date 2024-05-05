@@ -45,3 +45,30 @@ conda activate covid
 ```bash
 pip install -r requirements.txt
 ```
+
+4. Start FastAPI Application
+
+```bash
+uvicorn main:app --reload
+```
+
+5. Access API Endpoints in Postman:
+   Open Postman.
+   Create a new request.
+   Set the request method ( POST) and enter the URL of your FastAPI application along with the specific endpoint you want to access.
+
+## Usage
+
+### Using Postman to Upload an Image
+
+1. Open Postman.
+2. Create a new request.
+3. Set the request method to POST.
+4. Enter the URL of your FastAPI application along with the specific endpoint that expects the image.
+   - Example URL: `http://localhost:8000/predict`
+5. Click on the "Body" tab.
+6. Choose "form-data" as the body type.
+7. Add a key-value pair where the key corresponds to the name of the parameter expected by your API for the image, and the value is the image file you want to upload.
+   - Key: `image`
+   - Value: [Choose Files] button to select the image file from your local system.
+8. Click the "Send" button to send the request to your FastAPI application.
