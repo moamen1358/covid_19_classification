@@ -47,3 +47,4 @@ async def predict(image: UploadFile = File(...)):
         return {"prediction": class_label}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    
