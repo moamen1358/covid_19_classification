@@ -3,5 +3,5 @@
 # installation guide
 
 ```bash
-    conda create -n covid python=3.12
+conda create -n covid python=3.12
 ```
