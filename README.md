@@ -52,11 +52,6 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-5. Access API Endpoints in Postman:
-   Open Postman.
-   Create a new request.
-   Set the request method ( POST) and enter the URL of your FastAPI application along with the specific endpoint you want to access.
-
 ## Usage
 
 ### Using Postman to Upload an Image
